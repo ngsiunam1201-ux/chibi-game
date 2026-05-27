@@ -6,7 +6,6 @@
     <title>DSE 2026 念奴嬌·赤壁懷古｜知識密室</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght=400;700&display=swap" rel="stylesheet">
     <style>
-        /* 1. 全域樣式設定：復古紙張感 */
         * {
             box-sizing: border-box;
         }
@@ -24,7 +23,6 @@
             background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
         }
 
-        /* 2. 遊戲容器：古風畫軸邊框 */
         .container {
             background-color: #faf6eb;
             border: 6px solid #5d4037;
@@ -37,9 +35,8 @@
             background-image: url('https://www.transparenttextures.com/patterns/handmade-paper.png');
         }
 
-        /* 3. 標題與進度條 */
         h1 {
-            color: #8c1c1c; /* 硃砂紅 */
+            color: #8c1c1c;
             text-align: center;
             margin-top: 0;
             font-size: 26px;
@@ -85,7 +82,6 @@
             opacity: 1;
         }
 
-        /* 4. 關卡內容佈局 */
         .stage {
             display: none;
         }
@@ -94,14 +90,13 @@
             display: block;
         }
 
-        /* 內嵌向量圖形容器 */
         .stage-illustration {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0 auto 20px auto;
             max-width: 100%;
-            height: 160px;
+            height: 140px;
             background: #f4eee1;
             border: 1px dashed #a1887f;
             border-radius: 4px;
@@ -129,7 +124,6 @@
             padding-bottom: 8px;
         }
 
-        /* 5. 互動按鈕與輸入框 */
         .options-container {
             display: flex;
             flex-direction: column;
@@ -207,7 +201,6 @@
             border: 1px solid #ffe082;
         }
 
-        /* 6. 結語畫面 */
         .victory { text-align: center; }
         .victory h2 { color: #1b5e20; font-size: 28px; }
         .secret-scroll {
@@ -240,11 +233,10 @@
 
     <div id="stage1" class="stage active">
         <div class="stage-illustration">
-            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 52L44 20L48 24L16 56H12V52Z" fill="#5d4037" stroke="#2c1a0c" stroke-width="2"/>
                 <path d="M44 20L40 16L44 12L48 16L44 20Z" fill="#8c1c1c"/>
                 <path d="M12 52L8 56V50L12 46V52Z" fill="#2c1a0c"/>
-                <circle cx="48" cy="16" r="4" fill="#8c1c1c"/>
             </svg>
         </div>
         <div class="story-box">
@@ -265,10 +257,10 @@
 
     <div id="stage2" class="stage">
         <div class="stage-illustration">
-            <svg width="120" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="80" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 48L20 20L36 48H4Z" fill="#795548" opacity="0.7"/>
                 <path d="M24 48L44 12L60 48H24Z" fill="#5d4037"/>
-                <path d="M2 52H62" stroke="#2c1a0c" stroke-width="3"/>
+                <line x1="2" y1="52" x2="62" y2="52" stroke="#2c1a0c" stroke-width="2"/>
             </svg>
         </div>
         <div class="story-box">
@@ -289,8 +281,7 @@
 
     <div id="stage3" class="stage">
         <div class="stage-illustration">
-            <svg width="120" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 40C12 32 16 48 24 40C32 32 36 48 44 40C52 32 56 48 60 40V56H4V40Z" fill="#8c1c1c" opacity="0.2"/>
+            <svg width="80" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 46C10 38 14 52 22 46C30 40 34 54 42 46C50 38 54 52 62 46V56H2V46Z" fill="#5d4037"/>
             </svg>
         </div>
@@ -312,12 +303,9 @@
 
     <div id="stage4" class="stage">
         <div class="stage-illustration">
-            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M32 54L12 26C20 16 44 16 52 26L32 54Z" fill="#efebe9" stroke="#5d4037" stroke-width="2"/>
-                <line x1="32" y1="54" x2="22" y2="24" stroke="#a1887f"/>
                 <line x1="32" y1="54" x2="32" y2="20" stroke="#a1887f"/>
-                <line x1="32" y1="54" x2="42" y2="24" stroke="#a1887f"/>
-                <circle cx="32" cy="54" r="3" fill="#8c1c1c"/>
             </svg>
         </div>
         <div class="story-box">
@@ -338,11 +326,10 @@
 
     <div id="stage5" class="stage">
         <div class="stage-illustration">
-            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 24L32 12L52 24H12Z" fill="#8c1c1c"/>
-                <rect x="20" y="24" width="6" height="24" fill="#5d4037"/>
-                <rect x="38" y="24" width="6" height="24" fill="#5d4037"/>
-                <rect x="14" y="48" width="36" height="6" fill="#795548"/>
+                <rect x="24" y="24" width="4" height="24" fill="#5d4037"/>
+                <rect x="36" y="24" width="4" height="24" fill="#5d4037"/>
             </svg>
         </div>
         <div class="story-box">
@@ -363,10 +350,9 @@
 
     <div id="stage6" class="stage">
         <div class="stage-illustration">
-            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="26" r="16" fill="#efebe9" stroke="#5d4037" stroke-width="3"/>
-                <path d="M24 22C28 16 36 16 40 22" stroke="#8c1c1c" stroke-width="2" stroke-linecap="round"/>
-                <rect x="29" y="42" width="6" height="14" fill="#5d4037"/>
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="26" r="14" fill="#efebe9" stroke="#5d4037" stroke-width="2"/>
+                <path d="M26 22C28 18 36 18 38 22" stroke="#8c1c1c" stroke-width="2"/>
             </svg>
         </div>
         <div class="story-box">
@@ -387,9 +373,9 @@
 
     <div id="stage7" class="stage">
         <div class="stage-illustration">
-            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="44" cy="20" r="10" fill="#fbc02d"/>
-                <path d="M16 36h20v6L26 54h-2l4-12H16V36z" fill="#8c1c1c"/>
+                <path d="M16 40h20v4L26 54h-2l4-10H16V40z" fill="#8c1c1c"/>
             </svg>
         </div>
         <div class="story-box">
@@ -410,10 +396,9 @@
 
     <div id="stage8" class="stage">
         <div class="stage-illustration">
-            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="16" y="28" width="32" height="24" rx="2" fill="#5d4037" stroke="#2c1a0c" stroke-width="2"/>
-                <path d="M24 28V20C24 15.6 27.6 12 32 12C36.4 12 40 15.6 40 20V28" stroke="#2c1a0c" stroke-width="3"/>
-                <circle cx="32" cy="38" r="3" fill="#faf6eb"/>
+            <svg width="60" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="28" width="28" height="22" rx="2" fill="#5d4037"/>
+                <path d="M24 28V22C24 18 27 15 32 15C37 15 40 18 40 22V28" stroke="#2c1a0c" stroke-width="2"/>
             </svg>
         </div>
         <div class="story-box">
@@ -429,11 +414,6 @@
 
     <div id="victory" class="stage victory">
         <h2>🎉 摘星成功！ 🎉</h2>
-        <div class="stage-illustration" style="border:none; background:transparent;">
-            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 4L40.2 20.6L58.6 23.3L45.3 36.3L48.4 54.6L32 46L15.6 54.6L18.7 36.3L5.4 23.3L23.8 20.6L32 4Z" fill="#fbc02d" stroke="#f57f17" stroke-width="2"/>
-            </svg>
-        </div>
         <p>你已完美掌握《念奴嬌·赤壁懷古》的所有 DSE 核心命題關鍵！</p>
         <div class="secret-scroll">
             <strong>📊【2026 中文卷一奪星要訣】📊</strong><br>
