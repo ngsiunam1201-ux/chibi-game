@@ -136,16 +136,18 @@
             transition: 0.2s;
             color: #2c1a0c;
             font-family: 'Noto Serif TC', serif;
+            outline: none;
         }
 
         .option-btn:hover {
             background-color: #efebe9;
         }
 
+        /* 修正後的點擊選中樣式 */
         .option-btn.selected {
-            background-color: #ffebeb;
-            border-color: #8c1c1c;
-            color: #8c1c1c;
+            background-color: #ffebeb !important;
+            border: 2px solid #8c1c1c !important;
+            color: #8c1c1c !important;
             font-weight: bold;
         }
 
@@ -282,7 +284,7 @@
     <div id="stage4" class="stage">
         <div class="stage-emoji">🪭</div>
         <div class="story-box">
-            <strong>【英雄風貌】</strong> 詞中描寫周瑜「羽扇綸巾，談笑間、語灰飛煙滅」。這是 DSE 的經典人物形象賞析題。
+            <strong>【英雄風貌】</strong> 詞中描寫周瑜「羽扇綸巾，談笑間、檣櫓灰飛煙滅」。這是 DSE 的經典人物形象賞析題。
         </div>
         <div class="question-box">
             問題四：這句描寫主要突出了周瑜作為儒將的哪種風範？
@@ -298,3 +300,146 @@
     </div>
 
     <div id="stage5" class="stage">
+        <div class="stage-emoji">🏹</div>
+        <div class="story-box">
+            <strong>【人物對比】</strong> 蘇軾在詞中刻意提到周瑜「小喬初嫁了」，這一點在文本中具有深層的寫作用意。
+        </div>
+        <div class="question-box">
+            問題五：詞中特意寫周瑜「小喬初嫁了」，在整首詞中起到甚麼作用？
+        </div>
+        <div class="options-container">
+            <button class="option-btn" onclick="selectOption(5, 'A', this)">A. 為了說明三國時期的婚姻制度</button>
+            <button class="option-btn" onclick="selectOption(5, 'B', this)">B. 藉周瑜的美滿與春風得意，反襯蘇軾當下的落寞與孤寂</button>
+            <button class="option-btn" onclick="selectOption(5, 'C', this)">C. 純粹為了增加詞作的浪漫愛情色彩</button>
+            <button class="option-btn" onclick="selectOption(5, 'D', this)">D. 讚美小喬長相美麗動人</button>
+        </div>
+        <div class="btn-group" style="text-align:center;"><button class="action-btn" onclick="submitStage(5, 'B', '級')">提交 🗝</button></div>
+        <div id="msg5" class="message-box"></div>
+    </div>
+
+    <div id="stage6" class="stage">
+        <div class="stage-emoji">👨‍🦳</div>
+        <div class="story-box">
+            <strong>【寫作手法：襯托】</strong> 蘇軾描寫周瑜「雄姿英發」，卻轉而寫自己「故國神遊，多情應笑我，早生華髮」。這是襯托手法的核心考點。
+        </div>
+        <div class="question-box">
+            問題六：作者運用周瑜的「年少有為」，來反襯自己的甚麼狀況？
+        </div>
+        <div class="options-container">
+            <button class="option-btn" onclick="selectOption(6, 'A', this)">A. 說明宋代與三國時期的流行服飾完全不同</button>
+            <button class="option-btn" onclick="selectOption(6, 'B', this)">B. 表達對三國英雄後代的羨慕與崇拜</button>
+            <button class="option-btn" onclick="selectOption(6, 'C', this)">C. 反襯自己功業無成、年華老去、被貶失意的無奈</button>
+            <button class="option-btn" onclick="selectOption(6, 'D', this)">D. 讚美周瑜比自己更懂得保養身體之道</button>
+        </div>
+        <div class="btn-group" style="text-align:center;"><button class="action-btn" onclick="submitStage(6, 'C', '指')">提交 🗝</button></div>
+        <div id="msg6" class="message-box"></div>
+    </div>
+
+    <div id="stage7" class="stage">
+        <div class="stage-emoji">🍶</div>
+        <div class="story-box">
+            <strong>【主旨與情感化解】</strong> 「人生如夢，一尊還酹江月」。這是 DSE 考查作者「思想層次轉變」的關鍵。
+        </div>
+        <div class="question-box">
+            問題七：結尾「一尊還酹江月」反映了作者怎樣的精神超越？
+        </div>
+        <div class="options-container">
+            <button class="option-btn" onclick="selectOption(7, 'A', this)">A. 徹底消極消沉，決定就此放棄人生</button>
+            <button class="option-btn" onclick="selectOption(7, 'B', this)">B. 展現曠達開朗的心胸，以永恆自然消解個體生命的短促憂愁</button>
+            <button class="option-btn" onclick="selectOption(7, 'C', this)">C. 憤世嫉俗，決定寄情山水來對抗朝廷</button>
+            <button class="option-btn" onclick="selectOption(7, 'D', this)">D. 渴望尋仙求道，擺脫世俗的一切煩惱</button>
+        </div>
+        <div class="btn-group" style="text-align:center;"><button class="action-btn" onclick="submitStage(7, 'B', '南')">提交 🗝</button></div>
+        <div id="msg7" class="message-box"></div>
+    </div>
+
+    <div id="stage8" class="stage">
+        <div class="stage-emoji">🔐</div>
+        <div class="story-box">
+            <strong>【終極合龍】</strong> 恭喜你完成 2026 DSE 模擬測驗！你已成功收集 7 枚碎片。現在請將所有碎片按順序排列，輸入 2026 奪星必勝秘語！
+        </div>
+        <div class="question-box">
+            問題八：請輸入完整的 6 字密碼（前七關獲得的漢字按順序組合）：
+        </div>
+        <input type="text" id="finalInput" placeholder="請在此輸入 6 字密碼">
+        <div class="btn-group" style="text-align:center;"><button class="action-btn" onclick="submitFinal()">開啟 5★ 指南 🔓</button></div>
+        <div id="msg8" class="message-box"></div>
+    </div>
+
+    <div id="victory" class="stage victory">
+        <div class="stage-emoji">🏆</div>
+        <h2>🎉 摘星成功！ 🎉</h2>
+        <p>你已完美掌握《念奴嬌·赤壁懷古》的所有 DSE 核心命題關鍵！</p>
+        <div class="secret-scroll">
+            <strong>📊【2026 中文卷一奪星要訣】📊</strong><br>
+            1. **借景抒情**：亂石、驚濤是實景（寫景雄壯），歷史豪傑是虛情，情感由無奈轉至超脫。<br>
+            2. **襯托手法**：周瑜（羽扇綸巾、年少有為）正襯赤壁之雄偉，反襯 蘇軾（被貶、早生華髮）。<br>
+            3. **人生態度**：由「人生如夢」的短暫無奈，昇華向「還酹江月」的曠達與自我釋懷。<br>
+            4. **一字褒貶**：注意「亂、穿、驚、拍、捲」等動詞之煉字美感，常出現在考卷的賞析題中。
+        </div>
+        <p style="font-size: 14px; color: #795548;">🏆 請「截圖」保存此指南，祝你在 2026 DSE 考場上如周郎般從容不迫！</p>
+        <div class="btn-group" style="text-align:center;"><button class="action-btn" style="background-color: #1b5e20;" onclick="location.reload()">重新溫習 🔄</button></div>
+    </div>
+</div>
+
+<script>
+    let currentChoices = {};
+    const fragments = [];
+
+    // 修正選取處理邏輯
+    function selectOption(stage, choice, element) {
+        // 抓取當前關卡容器內的所有按鈕
+        const stageContainer = element.closest('.options-container');
+        const buttons = stageContainer.querySelectorAll('.option-btn');
+        
+        // 清除其他已選取的樣式
+        buttons.forEach(btn => btn.classList.remove('selected'));
+        
+        // 為點擊的按鈕加入選取樣式並儲存選擇
+        element.classList.add('selected');
+        currentChoices[stage] = choice;
+    }
+
+    function submitStage(stage, correct, fragment) {
+        const msg = document.getElementById('msg' + stage);
+        if (!currentChoices[stage]) {
+            msg.innerHTML = "<span class='error-msg'>⚠️ 請先選取一個答案！</span>";
+            return;
+        }
+        
+        if (currentChoices[stage] === correct) {
+            fragments[stage-1] = fragment;
+            msg.innerHTML = `<span class='success-msg'>🎉 正確！獲得碎片：<span class='fragment-highlight'>【${fragment}】</span><br><button class='action-btn' style='background-color:#1b5e20; font-size:13px; margin-top:10px;' onclick='goToStage(${stage + 1})'>下一關 ➡️</button></span>`;
+            document.getElementById('p' + stage).classList.add('completed');
+        } else {
+            msg.innerHTML = "<span class='error-msg'>❌ 考點掌握未清，請再審題一次！</span>";
+        }
+    }
+
+    function submitFinal() {
+        const input = document.getElementById('finalInput').value.trim();
+        const msg = document.getElementById('msg8');
+        
+        if (input === '奪取五星指南') {
+            document.getElementById('p8').classList.add('completed');
+            goToStage('victory');
+        } else {
+            msg.innerHTML = "<span class='error-msg'>❌ 密碼錯誤！提示：按照前七關獲得的漢字順序組成 6 字指南名（奪取...）。</span>";
+        }
+    }
+
+    function goToStage(target) {
+        document.querySelectorAll('.stage').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.progress-item').forEach(i => i.classList.remove('active'));
+        
+        if (target === 'victory') {
+            document.getElementById('victory').classList.add('active');
+        } else {
+            document.getElementById('stage' + target).classList.add('active');
+            document.getElementById('p' + target).classList.add('active');
+        }
+    }
+</script>
+
+</body>
+</html>
