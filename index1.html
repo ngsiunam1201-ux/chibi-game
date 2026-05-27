@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSE 2026 念奴嬌·赤壁懷古｜知識密室</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght=400;700&display=swap" rel="stylesheet">
     <style>
         /* 1. 全域樣式設定：復古紙張感 */
         * {
@@ -24,11 +24,10 @@
             background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
         }
 
-        /* 2. 遊戲容器：模仿真絲卷軸邊框 */
+        /* 2. 遊戲容器：古風畫軸邊框 */
         .container {
             background-color: #faf6eb;
-            border: 8px solid #5d4037;
-            border-image: url('https://i.imgur.com/8Qp2ZfH.png') 30 round;
+            border: 6px solid #5d4037;
             border-radius: 4px;
             padding: 30px;
             max-width: 750px;
@@ -95,15 +94,18 @@
             display: block;
         }
 
-        .stage-theme-img {
-            display: block;
+        /* 內嵌向量圖形容器 */
+        .stage-illustration {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 0 auto 20px auto;
             max-width: 100%;
-            height: 220px;
-            object-fit: contain;
-            border: 1px solid #a1887f;
-            padding: 5px;
-            background-color: white;
+            height: 160px;
+            background: #f4eee1;
+            border: 1px dashed #a1887f;
+            border-radius: 4px;
+            padding: 10px;
         }
 
         .story-box {
@@ -223,7 +225,7 @@
 
 <div class="container">
     <h1>📜 DSE 2026 知識密室</h1>
-    <div class="subtitle">——《念奴嬌·赤壁懷古》奪星考驗 ——</div>
+    <div class="subtitle">——《念奴嬌·赤壁懷古》主題解謎遊戲 ——</div>
 
     <div class="progress-container">
         <span id="p1" class="progress-item active">壹·背景</span>
@@ -237,7 +239,14 @@
     </div>
 
     <div id="stage1" class="stage active">
-        <img src="https://i.imgur.com/vHq4wHw.png" alt="蘇軾古風畫像" class="stage-theme-img">
+        <div class="stage-illustration">
+            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 52L44 20L48 24L16 56H12V52Z" fill="#5d4037" stroke="#2c1a0c" stroke-width="2"/>
+                <path d="M44 20L40 16L44 12L48 16L44 20Z" fill="#8c1c1c"/>
+                <path d="M12 52L8 56V50L12 46V52Z" fill="#2c1a0c"/>
+                <circle cx="48" cy="16" r="4" fill="#8c1c1c"/>
+            </svg>
+        </div>
         <div class="story-box">
             <strong>【知人論世】</strong> 蘇軾寫下此詞時，正值何種人生處境？這在 DSE 考卷中常作為「寫作背景」的分析基礎。
         </div>
@@ -255,7 +264,13 @@
     </div>
 
     <div id="stage2" class="stage">
-        <img src="https://i.imgur.com/e8iYyN2.png" alt="黃州赤壁江景" class="stage-theme-img">
+        <div class="stage-illustration">
+            <svg width="120" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 48L20 20L36 48H4Z" fill="#795548" opacity="0.7"/>
+                <path d="M24 48L44 12L60 48H24Z" fill="#5d4037"/>
+                <path d="M2 52H62" stroke="#2c1a0c" stroke-width="3"/>
+            </svg>
+        </div>
         <div class="story-box">
             <strong>【地景真偽】</strong> 詞中提到「人道是、三國周郎赤壁」。這與 DSE 閱讀卷中「考察作者寫法」有關。
         </div>
@@ -273,7 +288,12 @@
     </div>
 
     <div id="stage3" class="stage">
-        <img src="https://i.imgur.com/gK1kFpD.png" alt="亂石驚濤意象" class="stage-theme-img">
+        <div class="stage-illustration">
+            <svg width="120" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 40C12 32 16 48 24 40C32 32 36 48 44 40C52 32 56 48 60 40V56H4V40Z" fill="#8c1c1c" opacity="0.2"/>
+                <path d="M2 46C10 38 14 52 22 46C30 40 34 54 42 46C50 38 54 52 62 46V56H2V46Z" fill="#5d4037"/>
+            </svg>
+        </div>
         <div class="story-box">
             <strong>【修辭與動態】</strong> 「亂石穿空，驚濤拍岸，捲起千堆雪」。DSE 常用此句考查「視覺與聽覺的結合與摹寫」。
         </div>
@@ -291,7 +311,15 @@
     </div>
 
     <div id="stage4" class="stage">
-        <img src="https://i.imgur.com/vHq4wHw.png" alt="周瑜意象" class="stage-theme-img">
+        <div class="stage-illustration">
+            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 54L12 26C20 16 44 16 52 26L32 54Z" fill="#efebe9" stroke="#5d4037" stroke-width="2"/>
+                <line x1="32" y1="54" x2="22" y2="24" stroke="#a1887f"/>
+                <line x1="32" y1="54" x2="32" y2="20" stroke="#a1887f"/>
+                <line x1="32" y1="54" x2="42" y2="24" stroke="#a1887f"/>
+                <circle cx="32" cy="54" r="3" fill="#8c1c1c"/>
+            </svg>
+        </div>
         <div class="story-box">
             <strong>【英雄風貌】</strong> 詞中描寫周瑜「羽扇綸巾，談笑間、檣櫓灰飛煙滅」。這是 DSE 的經典人物形象賞析題。
         </div>
@@ -309,7 +337,14 @@
     </div>
 
     <div id="stage5" class="stage">
-        <img src="https://i.imgur.com/fMvS9I9.png" alt="歷史英雄對比" class="stage-theme-img">
+        <div class="stage-illustration">
+            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 24L32 12L52 24H12Z" fill="#8c1c1c"/>
+                <rect x="20" y="24" width="6" height="24" fill="#5d4037"/>
+                <rect x="38" y="24" width="6" height="24" fill="#5d4037"/>
+                <rect x="14" y="48" width="36" height="6" fill="#795548"/>
+            </svg>
+        </div>
         <div class="story-box">
             <strong>【人物對比】</strong> 蘇軾在詞中刻意提到周瑜「小喬初嫁了」，這一點在文本中具有深層的寫作用意。
         </div>
@@ -327,7 +362,13 @@
     </div>
 
     <div id="stage6" class="stage">
-        <img src="https://i.imgur.com/uRj0S9O.png" alt="蘇軾悲情" class="stage-theme-img">
+        <div class="stage-illustration">
+            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="26" r="16" fill="#efebe9" stroke="#5d4037" stroke-width="3"/>
+                <path d="M24 22C28 16 36 16 40 22" stroke="#8c1c1c" stroke-width="2" stroke-linecap="round"/>
+                <rect x="29" y="42" width="6" height="14" fill="#5d4037"/>
+            </svg>
+        </div>
         <div class="story-box">
             <strong>【寫作手法：襯托】</strong> 蘇軾描寫周瑜「雄姿英發」，卻轉而寫自己「故國神遊，多情應笑我，早生華髮」。這是襯托手法的核心考點。
         </div>
@@ -345,7 +386,12 @@
     </div>
 
     <div id="stage7" class="stage">
-        <img src="https://i.imgur.com/fffee0.png" alt="江月哲思" class="stage-theme-img" style="background:#000;">
+        <div class="stage-illustration">
+            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="44" cy="20" r="10" fill="#fbc02d"/>
+                <path d="M16 36h20v6L26 54h-2l4-12H16V36z" fill="#8c1c1c"/>
+            </svg>
+        </div>
         <div class="story-box">
             <strong>【主旨與情感化解】</strong> 「人生如夢，一尊還酹江月」。這是 DSE 考查作者「思想層次轉變」的關鍵。
         </div>
@@ -363,7 +409,13 @@
     </div>
 
     <div id="stage8" class="stage">
-        <img src="https://i.imgur.com/fMvS9I9.png" alt="終極密碼門" class="stage-theme-img">
+        <div class="stage-illustration">
+            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="16" y="28" width="32" height="24" rx="2" fill="#5d4037" stroke="#2c1a0c" stroke-width="2"/>
+                <path d="M24 28V20C24 15.6 27.6 12 32 12C36.4 12 40 15.6 40 20V28" stroke="#2c1a0c" stroke-width="3"/>
+                <circle cx="32" cy="38" r="3" fill="#faf6eb"/>
+            </svg>
+        </div>
         <div class="story-box">
             <strong>【終極合龍】</strong> 恭喜你完成 2026 DSE 模擬測驗！你已成功收集 7 枚碎片。現在請將所有碎片按順序排列，輸入 2026 奪星必勝秘語！
         </div>
@@ -377,7 +429,11 @@
 
     <div id="victory" class="stage victory">
         <h2>🎉 摘星成功！ 🎉</h2>
-        <img src="https://i.imgur.com/RreC9pY.png" alt="勝利勳章" class="stage-theme-img" style="border:none; box-shadow:none; background:transparent;">
+        <div class="stage-illustration" style="border:none; background:transparent;">
+            <svg width="100" height="100" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 4L40.2 20.6L58.6 23.3L45.3 36.3L48.4 54.6L32 46L15.6 54.6L18.7 36.3L5.4 23.3L23.8 20.6L32 4Z" fill="#fbc02d" stroke="#f57f17" stroke-width="2"/>
+            </svg>
+        </div>
         <p>你已完美掌握《念奴嬌·赤壁懷古》的所有 DSE 核心命題關鍵！</p>
         <div class="secret-scroll">
             <strong>📊【2026 中文卷一奪星要訣】📊</strong><br>
@@ -417,7 +473,6 @@
         const input = document.getElementById('finalInput').value.trim();
         const msg = document.getElementById('msg8');
         
-        // Final password requirement: 奪取五星指南
         if (input === '奪取五星指南') {
             document.getElementById('p8').classList.add('completed');
             goToStage('victory');
